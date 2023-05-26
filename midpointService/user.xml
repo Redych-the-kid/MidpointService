@@ -1,0 +1,284 @@
+<user xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000002" version="15">
+    <name>administrator</name>
+    <metadata>
+        <requestTimestamp>2023-05-02T15:25:46.976Z</requestTimestamp>
+        <createTimestamp>2023-05-02T15:25:47.007Z</createTimestamp>
+        <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+        <modifyTimestamp>2023-05-19T09:37:00.842Z</modifyTimestamp>
+        <modifierRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType">
+            <!-- administrator -->
+        </modifierRef>
+        <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</modifyChannel>
+    </metadata>
+    <operationExecution id="3">
+        <recordType>simple</recordType>
+        <timestamp>2023-05-02T15:25:47.053Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>add</t:changeType>
+                <t:objectType>c:UserType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000000085</token>
+            </executionResult>
+            <objectName>administrator</objectName>
+        </operation>
+        <status>success</status>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+    </operationExecution>
+    <operationExecution id="5">
+        <recordType>simple</recordType>
+        <timestamp>2023-05-02T16:38:21.360Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:UserType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000004674</token>
+            </executionResult>
+            <objectName>administrator</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType">
+            <!-- administrator -->
+        </initiatorRef>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="6">
+        <recordType>simple</recordType>
+        <timestamp>2023-05-02T16:39:49.342Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:UserType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000005453</token>
+            </executionResult>
+            <objectName>administrator</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType">
+            <!-- administrator -->
+        </initiatorRef>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="11">
+        <recordType>simple</recordType>
+        <timestamp>2023-05-19T09:37:01.018Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:UserType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000001041</token>
+            </executionResult>
+            <objectName>administrator</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType">
+            <!-- administrator -->
+        </initiatorRef>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <indestructible>true</indestructible>
+    <assignment id="1">
+        <metadata>
+            <requestTimestamp>2023-05-02T15:25:46.976Z</requestTimestamp>
+            <createTimestamp>2023-05-02T15:25:47.007Z</createTimestamp>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+        </metadata>
+        <targetRef oid="00000000-0000-0000-0000-000000000004" relation="org:default" type="c:RoleType">
+            <!-- Superuser -->
+        </targetRef>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+        </activation>
+    </assignment>
+    <assignment id="2">
+        <metadata>
+            <requestTimestamp>2023-05-02T15:25:46.976Z</requestTimestamp>
+            <createTimestamp>2023-05-02T15:25:47.007Z</createTimestamp>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+        </metadata>
+        <targetRef oid="00000000-0000-0000-0000-000000000300" relation="org:default" type="c:ArchetypeType">
+            <!-- System user -->
+        </targetRef>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+        </activation>
+    </assignment>
+    <assignment id="7">
+        <metadata>
+            <requestTimestamp>2023-05-19T09:37:00.601Z</requestTimestamp>
+            <requestorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType">
+                <!-- administrator -->
+            </requestorRef>
+            <createTimestamp>2023-05-19T09:37:00.842Z</createTimestamp>
+            <creatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType">
+                <!-- administrator -->
+            </creatorRef>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
+        </metadata>
+        <targetRef oid="00000000-0000-0000-0000-000000000008" relation="org:default" type="c:RoleType">
+            <!-- End user -->
+        </targetRef>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+        </activation>
+    </assignment>
+    <assignment id="8">
+        <metadata>
+            <requestTimestamp>2023-05-19T09:37:00.601Z</requestTimestamp>
+            <requestorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType">
+                <!-- administrator -->
+            </requestorRef>
+            <createTimestamp>2023-05-19T09:37:00.842Z</createTimestamp>
+            <creatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType">
+                <!-- administrator -->
+            </creatorRef>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
+        </metadata>
+        <targetRef oid="00000000-0000-0000-0000-00000000000a" relation="org:default" type="c:RoleType">
+            <!-- Approver -->
+        </targetRef>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+        </activation>
+    </assignment>
+    <assignment id="9">
+        <metadata>
+            <requestTimestamp>2023-05-19T09:37:00.601Z</requestTimestamp>
+            <requestorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType">
+                <!-- administrator -->
+            </requestorRef>
+            <createTimestamp>2023-05-19T09:37:00.842Z</createTimestamp>
+            <creatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType">
+                <!-- administrator -->
+            </creatorRef>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
+        </metadata>
+        <targetRef oid="00000000-0000-0000-0000-00000000000b" relation="org:default" type="c:RoleType">
+            <!-- Reviewer -->
+        </targetRef>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+        </activation>
+    </assignment>
+    <assignment id="10">
+        <metadata>
+            <requestTimestamp>2023-05-19T09:37:00.601Z</requestTimestamp>
+            <requestorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType">
+                <!-- administrator -->
+            </requestorRef>
+            <createTimestamp>2023-05-19T09:37:00.842Z</createTimestamp>
+            <creatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType">
+                <!-- administrator -->
+            </creatorRef>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
+        </metadata>
+        <targetRef oid="00000000-0000-0000-0000-00000000000c" relation="org:default" type="c:RoleType">
+            <!-- Delegator -->
+        </targetRef>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+        </activation>
+    </assignment>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <archetypeRef oid="00000000-0000-0000-0000-000000000300" relation="org:default" type="c:ArchetypeType">
+        <!-- System user -->
+    </archetypeRef>
+    <roleMembershipRef oid="00000000-0000-0000-0000-000000000300" relation="org:default" type="c:ArchetypeType">
+        <!-- System user -->
+    </roleMembershipRef>
+    <roleMembershipRef oid="00000000-0000-0000-0000-00000000000a" relation="org:default" type="c:RoleType">
+        <!-- Approver -->
+    </roleMembershipRef>
+    <roleMembershipRef oid="00000000-0000-0000-0000-000000000004" relation="org:default" type="c:RoleType">
+        <!-- Superuser -->
+    </roleMembershipRef>
+    <roleMembershipRef oid="00000000-0000-0000-0000-00000000000c" relation="org:default" type="c:RoleType">
+        <!-- Delegator -->
+    </roleMembershipRef>
+    <roleMembershipRef oid="00000000-0000-0000-0000-000000000008" relation="org:default" type="c:RoleType">
+        <!-- End user -->
+    </roleMembershipRef>
+    <roleMembershipRef oid="00000000-0000-0000-0000-00000000000b" relation="org:default" type="c:RoleType">
+        <!-- Reviewer -->
+    </roleMembershipRef>
+    <activation>
+        <administrativeStatus>enabled</administrativeStatus>
+        <effectiveStatus>enabled</effectiveStatus>
+        <enableTimestamp>2023-05-02T15:25:46.983Z</enableTimestamp>
+        <lockoutStatus>normal</lockoutStatus>
+    </activation>
+    <credentials>
+        <password>
+            <failedLogins>0</failedLogins>
+            <lastSuccessfulLogin>
+                <timestamp>2023-05-19T09:35:23.610Z</timestamp>
+                <from>172.18.0.1</from>
+            </lastSuccessfulLogin>
+            <previousSuccessfulLogin>
+                <timestamp>2023-05-02T16:13:51.067Z</timestamp>
+                <from>172.18.0.1</from>
+            </previousSuccessfulLogin>
+            <lastFailedLogin>
+                <timestamp>2023-05-02T15:26:10.403Z</timestamp>
+                <from>172.18.0.1</from>
+            </lastFailedLogin>
+            <metadata>
+                <createTimestamp>2023-05-02T15:25:46.983Z</createTimestamp>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+            </metadata>
+            <value>
+                <t:encryptedData>
+                    <t:encryptionMethod>
+                        <t:algorithm>http://www.w3.org/2001/04/xmlenc#aes256-cbc</t:algorithm>
+                    </t:encryptionMethod>
+                    <t:keyInfo>
+                        <t:keyName>v0SrOyj69lfLZJhZLy5mkNOQ9p4=</t:keyName>
+                    </t:keyInfo>
+                    <t:cipherData>
+                        <t:cipherValue>RNO3Jiq0whZndCqZ+sF8bNzlIjRECm7iUxs7na2fmEw=</t:cipherValue>
+                    </t:cipherData>
+                </t:encryptedData>
+            </value>
+        </password>
+    </credentials>
+    <behavior>
+        <authentication>
+            <failedLogins>0</failedLogins>
+            <lastSuccessfulLogin>
+                <timestamp>2023-05-19T09:35:23.574Z</timestamp>
+                <from>172.18.0.1</from>
+            </lastSuccessfulLogin>
+            <previousSuccessfulLogin>
+                <timestamp>2023-05-02T16:13:51.021Z</timestamp>
+                <from>172.18.0.1</from>
+            </previousSuccessfulLogin>
+            <lastFailedLogin>
+                <timestamp>2023-05-02T15:26:10.377Z</timestamp>
+                <from>172.18.0.1</from>
+            </lastFailedLogin>
+        </authentication>
+    </behavior>
+    <fullName>midPoint Administrator</fullName>
+    <givenName>midPoint</givenName>
+    <familyName>Administrator</familyName>
+</user>
