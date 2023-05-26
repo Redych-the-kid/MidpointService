@@ -2,15 +2,25 @@ package org.opezdal.midpointService;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
 
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathFactory;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.StringReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.Properties;
+import java.util.Scanner;
 
 public class ParsingUtilities {
     public static boolean checkConflicts(Document document){
@@ -58,5 +68,24 @@ public class ParsingUtilities {
             return false;
         }
         return true;
+    }
+
+    public static Document getUser(String oid) throws IOException, ParserConfigurationException, SAXException {
+        String unpw = "administrator:5ecr3t";
+        String url = "http://localhost:8080/midpoint/ws/rest/users/" + oid;
+
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        HttpURLConnection con = (HttpURLConnection) new URL(url).openConnection();
+        //Probably is GET by default but idc
+        con.setRequestMethod("GET");
+        //No idea what this is but it supposedly works to send auth data
+        String basicAuth = "Basic " + new String(Base64.getEncoder().encode(unpw.getBytes()));
+        con.setRequestProperty("Authorization", basicAuth);
+        System.out.println(con.getInputStream());
+        InputStream stream = con.getInputStream();
+        Scanner s = new Scanner(stream).useDelimiter("\\A");
+        String result = s.hasNext() ? s.next() : "";
+        InputSource is = new InputSource(new StringReader(result));
+        return factory.newDocumentBuilder().parse(is);
     }
 }

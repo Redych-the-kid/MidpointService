@@ -13,22 +13,10 @@ import java.io.IOException;
 @RestController
 public class ServiceREST {
     @GetMapping("users/{id}")
-    boolean userConflict(@PathVariable String id){
+    boolean userConflict(@PathVariable String id) throws IOException, ParserConfigurationException, SAXException {
         // Загрузка XML документа
-        Document document = null    ;
+        Document document = ParsingUtilities.getUser(id);
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        try {
-            document = factory.newDocumentBuilder().parse(id + ".xml");
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        }
-        if(document != null){
-            return ParsingUtilities.checkConflicts(document);
-        }
-        return true;
+        return ParsingUtilities.checkConflicts(document);
     }
 }
